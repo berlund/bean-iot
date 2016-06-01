@@ -1,0 +1,17 @@
+{
+  "name": "bean-iot",
+  "version": "0.0.0",
+  "description": "A connection between a blue bean and AWS IoT",
+  "main": "index.js",
+  "dependencies": {
+    "aws-iot-device-sdk": "~1.0.12",
+    "winston": "~2.2.0",
+    "ble-bean": "~2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lars Engel",
+  "license": "ISC"
+}
