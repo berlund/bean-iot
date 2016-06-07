@@ -5,8 +5,9 @@
   "main": "index.js",
   "dependencies": {
     "aws-iot-device-sdk": "~1.0.12",
-    "winston": "~2.2.0",
-    "ble-bean": "~2.1.1"
+    "aws-sdk": "^2.3.16",
+    "ble-bean": "~2.1.1",
+    "winston": "~2.2.0"
   },
   "devDependencies": {},
   "scripts": {
