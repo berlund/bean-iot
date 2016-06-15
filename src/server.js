@@ -20,8 +20,8 @@ var params = {
     "clientId": "bluebean",
     //"thingName": "bluebean",
     "caCert": "cert/root-CA.crt",
-    "clientCert": "cert/edc2f8c9d5-certificate.pem.crt",
-    "privateKey": "cert/edc2f8c9d5-private.pem.key"
+    "clientCert": "cert/certificate.pem.crt",
+    "privateKey": "cert/private.pem.key"
 }
 
 var thingShadows = awsIot.thingShadow(params);
@@ -82,7 +82,7 @@ var i = 1;
 setInterval(function () {
     i++;
     var ts = new Date().getTime();;
-    thingShadows.publish('lars/iot/temp/1', JSON.stringify({
+    thingShadows.publish('lars/iot/bluebean/temp', JSON.stringify({
         temp: i,
         timestamp: ts
     }));
